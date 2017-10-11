@@ -1,0 +1,11 @@
+h2#title-page {
+    margin: 12px 0 0 14px;
+    color: black;
+}
+
+a.navbar-brand {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 28px;
+    font-weight: 200;
+}
+
