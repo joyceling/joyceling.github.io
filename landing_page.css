@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 h1#main-heading {
@@ -23,7 +23,79 @@ h3#sub-heading {
     font-family: 'Cutive Mono', monospace;
 }
 
+/*--------------------------------
+
+       MY PICTURE
+
+--------------------------------*/
+
+div#my-photo-holder {
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    position: relative;
+    top:  55px;
+}
+
+img#my-photo {
+    border-radius: 20px;
+    position: relative;
+    left: 150px;
+}
 
 
+
+/*--------------------------------
+
+       THE THREE DIVS
+
+--------------------------------*/
+
+div#the-three-divs {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+div.main {
+    border: 20px solid rgba(255, 192, 203, 0.23);
+    border-radius: 15px;
+    background-color: white;
+    width: 30%;
+    height: 350px;
+    margin: 40px 15px 5px 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: .9;
+    min-width: 250px;
+    position: relative;
+    top: 100px;
+}
+
+div.main:hover {
+    opacity: 1;
+}
+
+div.main h2 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+div.main p {
+    margin-top: 15px;
+}
+
+div#inner-create-div {
+    padding: 15px;
+}
+
+div#inner-design-div {
+    padding: 15px;
+}
+
+div#innovate-div {
+    padding: 15px;
+}
 
 

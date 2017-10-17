@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Joyce Ling</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Homemade+Apple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="landing_page.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> joyce_ling </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--TITLE AND SUBTITLE OF PAGE-->
+    <div id="heading-container">
+        <!--<h1 id="main-heading">Web Developer</h1>-->
+        <!--<h3 id="sub-heading">Design. Create. Innovate.</h3>-->
+    </div>
+    <div id="my-photo-holder">
+        <img src="myphoto.png" id="my-photo">
+    </div>
+
+    <div id="the-three-divs">
+        <div class="main" id="design-div">
+            <div id="inner-design-div">
+                <h2>Design.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dolore doloribus ducimus eaque eius est excepturi magnam modi molestias natus omnis ratione, recusandae repudiandae sed sequi vel vero vitae!
+                </p>
+            </div>
+        </div>
+        <div class="main" id="create-div">
+            <div id="inner-create-div">
+                <h2>Create.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dolore doloribus ducimus eaque eius est excepturi magnam modi molestias natus omnis ratione, recusandae repudiandae sed sequi vel vero vitae!
+                </p>
+            </div>
+        </div>
+        <div class="main" id="innovate-div">
+            <div id="inner-innovate-div">
+                <h2>Innovate.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dolore doloribus ducimus eaque eius est excepturi magnam modi molestias natus omnis ratione, recusandae repudiandae sed sequi vel vero vitae!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--SCRIPTS FOR JQUERY, POPPER, BOOTSTRAP-->
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous">
+
+    </script>
+    <script>
+        "use strict";
+
+        // KEEP all photos and divs hidden until you scroll down the page
+//        $('#my-photo-holder').hide();
+//        $('#my-photo-holder').fadeIn(2500);
+        $('#inner-design-div').hide();
+        $('#inner-create-div').hide();
+        $('#inner-innovate-div').hide();
+
+
+        // condition: if pixels scrolled from top is > 270, fade in those divs!
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 150) {
+                $('#inner-design-div').fadeIn(200);
+                $('#inner-create-div').fadeIn(950);
+                $('#inner-innovate-div').fadeIn(1500);
+
+            } else {
+                $('#inner-design-div').fadeOut();
+                $('#inner-create-div').fadeOut();
+                $('#inner-innovate-div').fadeOut();
+            }
+        });
+
+
+
+//        $(document).scroll(function() {
+//            var y = $(this).scrollTop();
+//            if (y = 0) {
+//            } else if (y > 350){
+//                $('#my-photo-holder').fadeTo("medium", ".4");
+//            } else {
+//                $('#my-photo-holder').fadeOut();
+//            }
+//        })
+
+        // when clicking on my photo, takes to about me page
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+</html>

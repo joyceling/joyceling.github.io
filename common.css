@@ -9,3 +9,13 @@ a.navbar-brand {
     font-weight: 200;
 }
 
+a.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+div#navbarNav {
+    width: 100%;
+    text-align: center;
+
+}
