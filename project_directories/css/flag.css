@@ -25,7 +25,7 @@
     background-color: red;
     position: absolute;
     top: 82px;
-    left: -50px;
+    left: -57px;
 }
 
 #up {
@@ -50,7 +50,7 @@
     height: 30px;
     width:400px;
     position: absolute;
-    left: -40px;
+    left: -47px;
     transform: rotate(90deg);
     background-color: red;
 }

@@ -7,10 +7,6 @@ body {
 }
 
 #heading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
 }
 
 h1#main-heading {
@@ -31,18 +27,47 @@ h3#sub-heading {
 
 div#my-photo-holder {
     width: 100%;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    position: relative;
-    top:  55px;
+    display: flex;
+    justify-content: center;
 }
 
 img#my-photo {
     border-radius: 20px;
-    position: relative;
-    left: 150px;
+    margin: 15px auto;
 }
 
+div#landing-block {
+    width: 100%;
+    background: rgba(39, 39, 39, 0.42);
+}
+
+/*--------------------------------
+
+       MY PICTURE SUBTITLE
+
+--------------------------------*/
+
+div#my-photo-subtitle {
+    text-align: center;
+    color: #dedddd;
+    font-family: 'Raleway Dots', cursive;
+    background: rgb(150, 146, 146);
+    padding: 5px 0;
+    border-top: 1px dashed black;
+}
+
+}
+
+div#my-photo-subtitle p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+div#my-photo-subtitle h1 {
+    margin: 0.50em 0;
+    font-weight: bold;
+
+}
 
 
 /*--------------------------------
@@ -69,7 +94,6 @@ div.main {
     opacity: .9;
     min-width: 250px;
     position: relative;
-    top: 100px;
 }
 
 div.main:hover {
@@ -88,14 +112,42 @@ div.main p {
 
 div#inner-create-div {
     padding: 15px;
+    display: none;
 }
 
 div#inner-design-div {
     padding: 15px;
+    display: none;
 }
 
-div#innovate-div {
+div#inner-innovate-div {
     padding: 15px;
+    display: none;
 }
+
+@media only screen and (max-width: 540px) {
+    div.main {
+        margin: 20px auto;
+        width: 80%;
+        border: 10px solid rgba(255, 192, 203, 0.23);
+        font-size: 12px;
+    }
+
+    img#my-photo {
+        height: 280px;
+    }
+
+    div#the-three-divs {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div#inner-design-div, div#inner-create-div, div#inner-innovate-div {
+        display: block;
+    }
+
+
+}
+
 
 

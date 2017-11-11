@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Homemade+Apple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway+Dots" rel="stylesheet">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -41,8 +41,15 @@
         <!--<h1 id="main-heading">Web Developer</h1>-->
         <!--<h3 id="sub-heading">Design. Create. Innovate.</h3>-->
     </div>
-    <div id="my-photo-holder">
-        <img src="myphoto.png" id="my-photo">
+    <div id="landing-block">
+        <div id="my-photo-holder">
+            <img src="myphoto.png" id="my-photo" class="img-responsive">
+        </div>
+        <div id="my-photo-subtitle">
+            <h1>Full-stack Java Developer</h1>
+            <p>HTML, CSS, JavaScript, Java, MySQL</p>
+            <p>Bootstrap, Materialize, jQuery, Spring</p>
+        </div>
     </div>
 
     <div id="the-three-divs">
@@ -87,9 +94,9 @@
         // KEEP all photos and divs hidden until you scroll down the page
 //        $('#my-photo-holder').hide();
 //        $('#my-photo-holder').fadeIn(2500);
-        $('#inner-design-div').hide();
-        $('#inner-create-div').hide();
-        $('#inner-innovate-div').hide();
+//        $('#inner-design-div').hide();
+//        $('#inner-create-div').hide();
+//        $('#inner-innovate-div').hide();
 
 
         // condition: if pixels scrolled from top is > 270, fade in those divs!
