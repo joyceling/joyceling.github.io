@@ -1,0 +1,190 @@
+/*-----------------------------
+
+* COLORS
+
+------------------------------*/
+
+/*
+    blue: #165ac1
+*   yellow: #FFD701
+    red: #BF0B32
+*   white: #FFFFFF
+
+*/
+
+
+/*-----------------------------
+
+* BASE
+
+------------------------------*/
+
+header {
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    font-size: x-large;
+    text-shadow: 7px 5px 9px lightgrey;
+}
+
+h1 {
+    margin: 0px;
+}
+
+body {
+    margin-left: 0;
+    background-image: url("colorado-winter-wallpaper-mobile.jpg");
+    background-size: 160%;
+    background-repeat: no-repeat;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 5px 5px 5px gray;
+    font-size: larger;
+    opacity: .6;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+textarea {
+    border-radius: 5px;
+    resize: none;
+    font-size: 50px;
+    position: relative;
+    bottom: 8px;
+    border: none;
+    background-color: #BF0B32;
+    color: white;
+    font-weight: 600;
+    opacity: 1;
+    width: 10%;
+    height: 70px;
+    padding:3px;
+}
+
+.numbers {
+    background-color: #165ac1;
+    color: white;
+    font-weight: 600;
+}
+
+.operators {
+    background-color: #FFD701;
+    color: white;
+    font-weight: 600;
+}
+
+#operator {
+    text-align: center;
+}
+
+/*-----------------------------
+
+* OUTSIDE CONTAINER
+
+------------------------------*/
+
+#calculator {
+    border: transparent;
+    padding: 25px;
+    padding-top: 33px;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 443px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    box-shadow: 15px 20px 30px #f1f1f1;
+    opacity: .9;
+    position: relative;
+    top: 25px;
+}
+
+/*-----------------------------
+
+* INSIDE CONTAINER
+
+------------------------------*/
+
+#inner-calc {
+    border: 5px solid white;
+    border-radius: 6px;
+    min-width: 384px;
+    margin: 0 auto;
+    padding: 40px 0 ;
+    text-align: center;
+    background-color: white;
+}
+
+/*-----------------------------
+
+* EQUALS
+
+------------------------------*/
+
+#equals {
+    width: 255px;
+    font-size: 40px;
+    vertical-align: middle;
+    height: 70px;
+    color: white;
+}
+
+/*-----------------------------
+
+* CLEAR
+
+------------------------------*/
+
+#clear {
+    color: white;
+    font-weight: 700;
+}
+
+/*-----------------------------
+
+*
+*   TEXT INPUTS ON SIDE
+*
+
+------------------------------*/
+
+#first_and_result {
+    width: 42%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    border-right: none;
+    position: relative;
+    left: 15px;
+
+}
+
+#operator {
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    position: relative;
+    left: 5px;
+}
+
+#second_number {
+    width: 42%;
+    margin-right: 0px;
+    margin-left: auto;
+    text-align: center;
+    border-left: none;
+    position: relative;
+    right: 10px;
+}

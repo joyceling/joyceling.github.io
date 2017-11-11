@@ -1,0 +1,72 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container>h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    height: 60px;
+    width: 100%;
+}
+
+div.container {
+    width: 100%;
+    background-color: white;
+    opacity: .7;
+    margin: 0;
+    padding: 0;
+}
+
+div.jumbotron {
+    padding: 40px 0;
+    background-image: url(../img/pizza.png);
+    margin-bottom: 0;
+
+}
+
+.pizza {
+    float: left;
+    background-size: 100% 50%;
+}
+
+nav.navbar.navbar-default {
+    margin: 0;
+}
+
+
+.panel-footer>button {
+    background-color: #337AB7;
+    color: white;
+    align: right;
+}
+
+label>input {
+    font-weight: bold;
+}
+
+.sauce .panel-body {
+    background-color: #D9EDF7;
+    color: #407B98;
+}
+
+.list-group.checkbox {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+div.panel.panel-default.sauce {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.panel {
+    margin: 15px;
+}
+

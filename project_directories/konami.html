@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<body>
+
+<div id = "header">
+    <h1>Crack the Konami code!</h1>
+
+    <p>Use your arrow keys and the letters of the alphabet. <br> Press the ENTER key when you  have entered your answer in the squares below.
+    </p>
+
+    <h3 id="life-lost">You just lost a life!</h3>
+    <h3 id="out-of-lives">Game over. Refresh page to try again.</h3>
+    <h3 id="you-win">YOU WIN!</h3>
+    <h3 id="add-30-lives">+30 lives</h3>
+    <h3 id = "cannot-press">That is not a valid key to press.</h3>
+    <div class="lives">
+        <img src="img/heart-transparent.png" class="heart" id="1">
+        <img src="img/heart-transparent.png" class="heart" id="2">
+        <img src="img/heart-transparent.png" class="heart" id="3">
+        <img src="img/heart-transparent.png" class="heart" id="4">
+        <img src="img/heart-transparent.png" class="heart" id="5">
+        <img src="img/heart-transparent.png" class="heart" id="6">
+        <img src="img/heart-transparent.png" class="heart" id="7">
+        <img src="img/heart-transparent.png" class="heart" id="8">
+        <img src="img/heart-transparent.png" class="heart" id="9">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+        <img src="img/heart-transparent.png" class="heart hidden-heart">
+
+    </div>
+
+</div>
+<div class="row">
+    <input type="text" class="input" id = "one" placeholder="1" maxlength="1" readonly>
+    <input type="text" class="input" id = "two" placeholder="2" maxlength="1" readonly>
+    <input type="text" class="input" id = "three" placeholder="3" maxlength="1" readonly>
+    <input type="text" class="input" id = "four" placeholder="4" maxlength="1" readonly>
+    <input type="text" class="input" id = "five" placeholder="5" maxlength="1" readonly>
+</div>
+<div class="row">
+    <input type="text" class="input" id = "six" placeholder="6" maxlength="1" readonly>
+    <input type="text" class="input" id = "seven" placeholder="7" maxlength="1" readonly>
+    <input type="text" class="input" id = "eight" placeholder="8" maxlength="1" readonly>
+    <input type="text" class="input" id = "nine" placeholder="9" maxlength="1" readonly>
+    <input type="text" class="input" id = "ten" placeholder="10" maxlength="1" readonly>
+</div>
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+
+</script>
+<script>
+    var row = $(".row");
+    var input = $(".input");
+    var $document = $(document);
+    var h3 = $("h3");
+    var header = $("#header");
+    var heart = $(".heart");
+    var lives = $(".lives");
+    var body = $("body");
+    var array = ["←", "↑", "→", "↓", "a", "b", "enter"];
+    var arraySequence = ["↑", "↑", "↓", "↓", "←", "→", "←", "→", "b", "a"];
+    var savedVariable = "";
+    var one = $("#one");
+    var two = $("#two");
+    var three = $("#three");
+    var four = $("#four");
+    var five = $("#five");
+    var six = $("#six");
+    var seven = $("#seven");
+    var eight = $("#eight");
+    var nine = $("#nine");
+    var ten = $("#ten");
+    var boxArray = [one, two, three, four, five, six, seven, eight, nine, ten];
+    var lifeLost = $("#life-lost");
+    var j = 1;
+    var outofLives = $("#out-of-lives");
+    var youWin = $("#you-win");
+    var addThirty = $("#add-30-lives");
+    var hiddenHeart = $(".hidden-heart");
+    var cannotPress = $("#cannot-press");
+
+
+    // Change the styling of text box
+    input.css({
+        "height" : "120px" ,
+        "width" : "10%",
+        "min-width": "120px",
+        "font-size" : "80px",
+        "text-align" : "center",
+        "margin" : "15px",
+        "margin-bottom" : "40px",
+        "border" : "none",
+        "border-radius" : "20px"
+
+    });
+
+    // Add body styling
+    body.css({
+        "background-color" : "black"
+    });
+
+    // Add row styling
+    row.css({
+        "width": "100%",
+        "display" : "flex",
+        "justify-content" : "center",
+        "align-items" : "center",
+        "position" : "relative",
+        "top" : "150px"
+    });
+
+    // Add header styling
+    header.css({
+        "text-align" : "center",
+        "position" : "relative",
+        "top" : "80px",
+        "color": "white",
+        "font-family" : "'VT323', monospace",
+        "font-size" : "30px"
+    });
+
+    // Add lives styling
+    heart.css({
+        "height" : "50px",
+        "width" : "50px"
+    });
+
+
+    lives.css ({
+        "display" : "flex",
+        "justify-content" : "center",
+        "flex-wrap" : "wrap",
+        "max-width" : "700px",
+        "margin" : "0 auto"
+    });
+
+    h3.css ({
+        "text-align" : "middle",
+        "display" : "none"
+    });
+
+    lifeLost.css ({
+        "color": "#C5302C"
+    });
+
+    outofLives.css ({
+        "color" : "#C5302C",
+        "font-size" : "40px"
+    });
+
+    youWin.css ({
+        "color" : "green"
+    });
+
+    hiddenHeart.css ({
+        "display" : "none"
+    });
+
+    cannotPress.css ({
+        "display" : "none",
+        "color" : "red"
+    });
+
+    var reset = function() {
+        for (k = 0; k < 10; k++) {
+            boxArray[k].attr("placeholder", k + 1);
+            boxArray[k].val("");
+            boxArray[k].css({
+                "background-color" : "white",
+                "border" : "none"
+            });
+        }
+
+        k = 0;
+    };
+
+    var loseAlife = function () {
+        if (j < 10) {
+            lifeLost.fadeIn(800);
+            lifeLost.fadeOut();
+            $("#" + j).fadeOut();
+            j++;
+        } else {
+            outofLives.fadeIn(500);
+            $("#10").fadeOut();
+        }
+
+    };
+
+    var finishReset = function () {
+
+        console.log(one.css("background-color"));
+        if (one.css("background-color") === "rgb(0, 128, 0)" &&
+            two.css("background-color") === "rgb(0, 128, 0)" &&
+            three.css("background-color") === "rgb(0, 128, 0)" &&
+            four.css("background-color") === "rgb(0, 128, 0)" &&
+            five.css("background-color") === "rgb(0, 128, 0)" &&
+            six.css("background-color") === "rgb(0, 128, 0)" &&
+            seven.css("background-color") === "rgb(0, 128, 0)" &&
+            eight.css("background-color") === "rgb(0, 128, 0)" &&
+            nine.css("background-color") === "rgb(0, 128, 0)" &&
+            ten.css("background-color") === "rgb(0, 128, 0)") {
+
+            youWin.fadeIn(800);
+            addThirty.fadeIn(800);
+            hiddenHeart.fadeIn(6000);
+
+        } else {
+            reset();
+            loseAlife();
+        }
+    };
+
+    var k = 0;
+
+    var pressAKey = function (key) {
+        console.log(key.keyCode);
+//        for (var i = 1; i <= 10; i++) {
+        switch (key.keyCode) {
+            // Arrow keys (left, up, right, down)
+            case 37:
+                savedVariable = array[0];
+                boxArray[k].val(savedVariable);
+                break;
+            case 38:
+                savedVariable = array[1];
+                boxArray[k].val(savedVariable);
+                break;
+            case 39:
+                savedVariable = array[2];
+                boxArray[k].val(savedVariable);
+                break;
+            case 40:
+                savedVariable = array[3];
+                boxArray[k].val(savedVariable);
+                break;
+            case 65:
+                savedVariable = array[4];
+                boxArray[k].val(savedVariable);
+                break;
+            case 66:
+                savedVariable = array[5];
+                boxArray[k].val(savedVariable);
+                break;
+            case 13 :
+                finishReset();
+                return;
+            // the rest of the alphabet
+            case 67 :
+                savedVariable = "c";
+                boxArray[k].val(savedVariable);
+                break;
+            case 68 :
+                savedVariable = "d";
+                boxArray[k].val(savedVariable);
+                break;
+            case 69 :
+                savedVariable = "e";
+                boxArray[k].val(savedVariable);
+                break;
+            case 70 :
+                savedVariable = "f";
+                boxArray[k].val(savedVariable);
+                break;
+            case 71 :
+                savedVariable = "g";
+                boxArray[k].val(savedVariable);
+                break;
+            case 72 :
+                savedVariable = "h";
+                boxArray[k].val(savedVariable);
+                break;
+            case 73 :
+                savedVariable = "i";
+                boxArray[k].val(savedVariable);
+                break;
+            case 74 :
+                savedVariable = "j";
+                boxArray[k].val(savedVariable);
+                break;
+            case 75 :
+                savedVariable = "k";
+                boxArray[k].val(savedVariable);
+                break;
+            case 76 :
+                savedVariable = "l";
+                boxArray[k].val(savedVariable);
+                break;
+            case 77 :
+                savedVariable = "m";
+                boxArray[k].val(savedVariable);
+                break;
+            case 78 :
+                savedVariable = "n";
+                boxArray[k].val(savedVariable);
+                break;
+            case 79 :
+                savedVariable = "o";
+                boxArray[k].val(savedVariable);
+                break;
+            case 80 :
+                savedVariable = "p";
+                boxArray[k].val(savedVariable);
+                break;
+            case 81 :
+                savedVariable = "q";
+                boxArray[k].val(savedVariable);
+                break;
+            case 82 :
+                savedVariable = "r";
+                boxArray[k].val(savedVariable);
+                break;
+            case 83 :
+                savedVariable = "s";
+                boxArray[k].val(savedVariable);
+                break;
+            case 84 :
+                savedVariable = "t";
+                boxArray[k].val(savedVariable);
+                break;
+            case 85 :
+                savedVariable = "u";
+                boxArray[k].val(savedVariable);
+                break;
+            case 86 :
+                savedVariable = "v";
+                boxArray[k].val(savedVariable);
+                break;
+            case 87 :
+                savedVariable = "w";
+                boxArray[k].val(savedVariable);
+                break;
+            case 88 :
+                savedVariable = "x";
+                boxArray[k].val(savedVariable);
+                break;
+            case 89 :
+                savedVariable = "y";
+                boxArray[k].val(savedVariable);
+                break;
+            case 90 :
+                savedVariable = "z";
+                boxArray[k].val(savedVariable);
+                break;
+            case 32 :
+                cannotPress.fadeIn().fadeOut();
+                return;
+
+        }
+
+
+        // if-else statements to check for accuracy
+
+        if (boxArray[k].val() === arraySequence[k]) {
+            boxArray[k].css({
+                "background-color": "green"
+            });
+            k++;
+        } else {
+            boxArray[k].css({
+                "background-color": "red"
+
+            });
+            k++;
+        }
+
+        return;
+
+        ;
+
+
+    };
+
+    $document.keydown(pressAKey);
+
+
+
+
+</script>
+</body>
+</html>
