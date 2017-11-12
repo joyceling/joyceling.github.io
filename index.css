@@ -107,12 +107,12 @@ div.main p {
     margin-top: 15px;
 }
 
-div#inner-create-div {
+div#inner-design-div {
     padding: 15px;
     display: none;
 }
 
-div#inner-design-div {
+div#inner-create-div {
     padding: 15px;
     display: none;
 }
@@ -136,7 +136,7 @@ div#inner-innovate-div {
 
     div#the-three-divs {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     div#inner-design-div, div#inner-create-div, div#inner-innovate-div {
