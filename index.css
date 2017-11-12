@@ -50,7 +50,7 @@ div#landing-block {
 div#my-photo-subtitle {
     text-align: center;
     color: #dedddd;
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     background: rgb(150, 146, 146);
     padding: 5px 0;
     border-top: 1px dashed black;
@@ -60,7 +60,6 @@ div#my-photo-subtitle p {
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 div#my-photo-subtitle h1 {

@@ -1,0 +1,42 @@
+/*--------------------------------
+
+       BASE
+
+--------------------------------*/
+
+h2#title-page {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+
+/*--------------------------------
+
+       PROJECT CARDS
+
+--------------------------------*/
+
+.project-card {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+a.btn.btn-primary {
+    color: #fff;
+    background-color: #a5a5a5;
+    border-color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a.btn.btn-primary:hover, a.btn.btn-primary:active{
+    background-color: #e47a72;
+    border-color: #ffffff;
+}
+
+img.card-img-top {
+    margin: 14px 0;
+}
