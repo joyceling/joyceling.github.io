@@ -21,6 +21,7 @@ h2#title-page {
 .project-card {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
+    margin: 10px 0;
 }
 
 a.btn.btn-primary {
@@ -39,4 +40,24 @@ a.btn.btn-primary:hover, a.btn.btn-primary:active{
 
 img.card-img-top {
     margin: 14px 0;
+}
+
+
+@media only screen and (min-width: 540px) {
+    .card-text {
+        max-width:1000px;
+    }
+
+    img.card-img-top {
+        margin: 14px 0;
+        max-height:197px;
+    }
+
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 800px;
+    }
+
 }
