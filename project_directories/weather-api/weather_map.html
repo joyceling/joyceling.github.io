@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's Always Sunny in SA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="weather_map.css">
+</head>
+<body>
+
+<!--CLOUDS-->
+<h1 id="heading"></h1>
+<h3>"The Gang Figures Out the Weather!"</h3>
+<div id="form">
+    <input type="text" id="city" class="form-control" placeholder="Enter any city here">
+
+    <button id="weather-submit" class="btn btn-default">Submit</button>
+</div>
+<div class="container">
+    <div id="clouds">
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
+        <div class="cloud3"></div>
+    </div>
+    <div id="clouds2">
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
+        <div class="cloud3"></div>
+    </div>
+
+</div>
+<div id="container">
+
+    <div class="weather" id="present">
+        <h3>Present Weather</h3>
+    </div>
+
+    <div class="weather" id="one-day">
+        <h3>+3 hours</h3>
+    </div>
+
+    <div class="weather" id="two-day">
+        <h3>+6 hours</h3>
+    </div>
+
+<!--map api    -->
+<h3>Drag the marker below to see the weather in any city!</h3>
+<div id="map"></div>
+
+
+<!--ROTATING SUN-->
+</div>
+    <div class="sunholder">
+        <div class="sun"></div>
+        <div class="raybase ray1"><div class="ray"></div></div>
+        <div class="raybase ray2"><div class="ray"></div></div>
+        <div class="raybase ray3"><div class="ray"></div></div>
+        <div class="raybase ray4"><div class="ray"></div></div>
+        <div class="raybase ray5"><div class="ray"></div></div>
+        <div class="raybase ray6"><div class="ray"></div></div>
+        <div class="raybase ray7"><div class="ray"></div></div>
+        <div class="raybase ray8"><div class="ray"></div></div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApj9lV_GDZL1c6eMJrOcYfW4VvjFWRaqA">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="weather_map.js">
+    </script>
+</body>
+</html>
