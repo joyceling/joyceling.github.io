@@ -66,6 +66,25 @@ div#my-photo-subtitle h1 {
     margin: 0.50em 0;
 }
 
+button.btn.btn-default {
+    color: #fff;
+    border-color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #eccdcd;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+button.btn.btn-default:hover {
+    background-color: #e47a72;
+    border-color: #ffffff;
+}
+
+
 
 /*--------------------------------
 
@@ -143,6 +162,40 @@ div#inner-innovate-div {
         display: block;
     }
 
+
+}
+
+@media only screen and (min-width: 550px) {
+    div#landing-block {
+        display:flex;
+        width: 80%;
+        margin: 72px auto;
+        min-width: 940px;
+        background-color: rgba(171, 164, 164, 0);
+    }
+
+    div#my-photo-holder {
+        width: 50%;
+    }
+
+    div#my-photo-subtitle {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px dashed black;
+        margin: 15px 30px;
+        border-radius: 40px;
+    }
+
+    div#subtitle-holder {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    div#subtitle-holder h1 {
+        font-size: 50px;
+    }
 
 }
 

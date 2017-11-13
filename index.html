@@ -46,11 +46,16 @@
             <img src="myphoto.png" id="my-photo" class="img-responsive">
         </div>
         <div id="my-photo-subtitle">
-            <h1>Full-stack Java Developer</h1>
-            <p>HTML, CSS, JavaScript, Java, MySQL</p>
-            <p>Bootstrap, Materialize, jQuery, Spring</p>
+            <div id="subtitle-holder">
+                <h1>Full-stack Java Developer</h1>
+                <p>HTML, CSS, JavaScript, Java, MySQL</p>
+                <p>Bootstrap, Materialize, jQuery, Spring</p>
+                <button type="submit" class="btn btn-default">Learn more</button>
+                </form>
+            </div>
         </div>
     </div>
+    <br>
 
     <div id="the-three-divs">
         <div class="main" id="design-div">
@@ -102,7 +107,7 @@
         // condition: if pixels scrolled from top is > 270, fade in those divs!
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            if (y > 150) {
+            if (y > 80) {
                 $('#inner-design-div').fadeIn(200);
                 $('#inner-create-div').fadeIn(950);
                 $('#inner-innovate-div').fadeIn(1500);
