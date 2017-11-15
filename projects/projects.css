@@ -22,6 +22,8 @@ h2#title-page {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 a.btn.btn-primary {
@@ -50,7 +52,7 @@ img.card-img-top {
 
     img.card-img-top {
         margin: 14px 0;
-        max-height:197px;
+        height:197px;
     }
 
     .card-text {
@@ -63,14 +65,9 @@ img.card-img-top {
 }
 
 nav.navbar.bot {
-    bottom: -332px;
+    bottom: -361px;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar.bot {
-        display:none;
-    }
-}
 
 
 
