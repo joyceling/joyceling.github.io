@@ -46,9 +46,6 @@ img.card-img-top {
 
 
 @media only screen and (min-width: 540px) {
-    .card-text {
-        max-width:1000px;
-    }
 
     img.card-img-top {
         margin: 14px 0;
