@@ -19,3 +19,83 @@ div#navbarNav {
     text-align: center;
 
 }
+
+.navbar.top {
+    background-color:white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/*--------------------------------
+
+       BOTTOM NAV
+
+--------------------------------*/
+
+nav.navbar.bot {
+    background-color: white;
+    padding-top: 25px;
+    border-top:1px solid rgba(0, 0, 0, 0.08);
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+nav.navbar ul {
+    list-style-type: none;
+    font-size: 19px;
+}
+
+.links ul li a {
+    color:black;
+}
+
+.links ul li a:hover {
+    color:pink;
+    text-decoration: none;
+}
+
+.row {
+    width:100%;
+}
+
+#love {
+    text-align: center;
+}
+
+/*--------------------------------
+
+               ICONS
+
+--------------------------------*/
+
+.logo {
+    text-align: right;
+}
+
+.logo ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo ul li {
+    padding: 0 5px;
+}
+
+.icons {
+    width:40px;
+}
+
+div.col.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+p#love {
+    font-size: 19px;
+}
+
+

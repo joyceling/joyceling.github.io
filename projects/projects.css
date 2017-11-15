@@ -61,3 +61,16 @@ img.card-img-top {
     }
 
 }
+
+nav.navbar.bot {
+    bottom: -332px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar.bot {
+        display:none;
+    }
+}
+
+
+

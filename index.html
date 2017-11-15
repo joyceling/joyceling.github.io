@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="content">
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"> joyce_ling </a>
@@ -83,6 +84,58 @@
             </div>
         </div>
     </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <nav class="navbar navbar-light bg-faded bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col links">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="projects/projects.html">Projects</a>
+                            </li>
+                            <li>
+                                <a href="contact/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col logo">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/joyce-ling/" target="_blank">
+                                    <img class="icons" src="my-icons-collection/svg/003-linked-in-square-button.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ironicsushi" target="_blank">
+                                    <img class="icons" src="my-icons-collection/svg/002-facebook.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/joyceling" target="_blank">
+                                    <img class="icons" src="my-icons-collection/svg/001-github-sign.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="love">Made with ❤ by Joyce Ling</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!--End of Footer-->
+
 
 
 
@@ -107,7 +160,7 @@
         // condition: if pixels scrolled from top is > 270, fade in those divs!
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            if (y > 80) {
+            if (y > 50) {
                 $('#inner-design-div').fadeIn(200);
                 $('#inner-create-div').fadeIn(950);
                 $('#inner-innovate-div').fadeIn(1500);

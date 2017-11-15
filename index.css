@@ -97,6 +97,7 @@ div#the-three-divs {
     display: flex;
     justify-content: center;
     align-content: space-between;
+    margin-bottom: 80px;
 }
 
 div.main {
@@ -104,7 +105,7 @@ div.main {
     border-radius: 15px;
     background-color: white;
     width: 30%;
-    height: 350px;
+    height: 405px;
     margin: 40px 15px 5px 15px;
     text-align: center;
     font-style: italic;
@@ -142,6 +143,11 @@ div#inner-innovate-div {
     display: none;
 }
 
+nav.navbar.bot {
+    bottom: -490px;
+}
+
+
 @media only screen and (max-width: 540px) {
     div.main {
         margin: 20px auto;
@@ -170,7 +176,7 @@ div#inner-innovate-div {
     div#landing-block {
         display:flex;
         width: 80%;
-        margin: 72px auto;
+        margin: 25px auto;
         min-width: 940px;
         background-color: rgba(171, 164, 164, 0);
     }
@@ -199,6 +205,5 @@ div#inner-innovate-div {
     }
 
 }
-
 
 

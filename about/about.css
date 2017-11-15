@@ -1,0 +1,19 @@
+body {
+    background-color: #fff5f8;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+div#about-content {
+    width: 95%;
+    border: 1px dashed black;
+    height: 650px;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+
+
