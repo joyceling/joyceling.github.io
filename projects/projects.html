@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html">joyce_ling</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
                     <br>
                     (Unfortunately, this cannot be shown like the other projects below since it isn't a simple HTML file - but feel free to click 'Learn More' to see some screenshots!)
                 </p>
-            <a href="../dadlister-seemore.html" class="btn btn-primary">See More</a>
+            <a href="../dadlister-seemore.html" target="_blank" class="btn btn-primary">See More</a>
             </div>
         </div>
     <!--MOVIE DATABASE-->
@@ -70,7 +70,7 @@
                     <br>
                     (Unfortunately, this cannot be shown like the other projects below since it isn't a simple HTML file - but feel free to click 'Learn More' to see some screenshots!)
                 </p>
-                <a href="#" class="btn btn-primary">See More</a>
+                <a href="../movie-seemore.html" target="_blank" class="btn btn-primary">See More</a>
             </div>
         </div>
 
@@ -110,7 +110,7 @@
             <div class="card-block">
                 <h4 class="card-title">Codeup Design</h4>
                 <p class="card-text">My first fully responsive site. Going off of a style guide, I utilized Bootstrap's grid system along with HTML and CSS to create a website for a fictional company.</p>
-                <a href="#" class="btn btn-primary">See More</a>
+                <!--<a href="../codeup-seemore.html" target="_blank" class="btn btn-primary">See More</a>-->
                 <a href="../project_directories/bootstrap-grid-system.html" class="btn btn-primary">Go to website</a>
             </div>
         </div>
@@ -203,17 +203,17 @@
             crossorigin="anonymous">
     </script>
     <script>
-        $(document).ready(function(){
-
-        var cardTextLength = $(".card-text").text();
-
-        console.log(cardTextLength);
-
-        if (cardTextLength.length > 50) {
-            $(".card-text").text(cardTextLength.substring(0, 50) + "...")
-        }
-
-        });
+//        $(document).ready(function(){
+//
+//        var cardTextLength = $(".card-text").text();
+//
+//        console.log(cardTextLength);
+//
+//        if (cardTextLength.length > 50) {
+//            $(".card-text").text(cardTextLength.substring(0, 50) + "...")
+//        }
+//
+//        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
