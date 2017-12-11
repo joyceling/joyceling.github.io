@@ -47,23 +47,28 @@ img.card-img-top {
 
 @media only screen and (min-width: 540px) {
 
+    .project-card {
+        height: 500px;
+    }
+
+    p.card-text {
+        height:150px;
+    }
+
     img.card-img-top {
         margin: 14px 0;
         height:197px;
     }
 
     .card-text {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 800px;
+        overflow: scroll;
     }
 
 }
 
-nav.navbar.bot {
-    bottom: -361px;
-}
+/*nav.navbar.bot {*/
+    /*bottom: -361px;*/
+/*}*/
 
 
 

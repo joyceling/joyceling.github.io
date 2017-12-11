@@ -18,6 +18,10 @@ a.nav-link {
     font-size: 20px;
 }
 
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 div#navbarNav {
     width: 100%;
     text-align: center;
@@ -44,7 +48,7 @@ nav.navbar.bot {
     left: 0;
     right: 0;
     bottom: 0;
-    display:none;
+    /*display:none;*/
 }
 
 
