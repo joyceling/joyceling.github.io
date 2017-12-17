@@ -61,7 +61,13 @@ nav.navbar.navbar-light.bg-faded.bot {
         align-items: center;
     }
 
-    .
+    .view-full {
+        display:none;
+    }
+}
+
+.featured-project img {
+    height: inherit;
 }
 
 
@@ -82,6 +88,14 @@ nav.navbar.navbar-light.bg-faded.bot {
 
     .card-text {
         overflow: scroll;
+    }
+
+    .featured-project img {
+        height: initial;
+    }
+
+    div.featured-project {
+        height: fit-content;
     }
 
 }
