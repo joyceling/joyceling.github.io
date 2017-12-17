@@ -17,10 +17,24 @@ div#about-content {
 div#about-content {
     font-size: 15px;
     background-color: white;
+    width: 80%;
 }
 
 p {
     text-align: center;
+}
+
+a {
+    color: pink;
+}
+
+img {
+    width:513px;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 370px) {
@@ -29,4 +43,18 @@ p {
         justify-content: flex-end;
     }
 }
+
+@media only screen and (max-width: 500px) {
+
+    p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    img {
+        width: 74%;
+    }
+}
+
 
