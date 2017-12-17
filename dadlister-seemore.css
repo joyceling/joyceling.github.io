@@ -1,0 +1,17 @@
+img {
+    width: 80%;
+    margin: 30px auto;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #9a93935c;
+}
+
+p:not(.description) {
+    text-align: center;
+    font-size: 30px;
+}
+
+.description {
+    width: 64%;
+    margin: 20px auto;
+}
