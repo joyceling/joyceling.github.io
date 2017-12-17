@@ -132,3 +132,22 @@ p#love {
 
 }
 
+/*--------------------------------
+
+            BUTTONS
+
+--------------------------------*/
+
+a.btn.btn-primary {
+    color: #fff;
+    background-color: #e47a72;
+    border-color: #ffffff;
+    margin: 10px auto;
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a.btn.btn-primary:hover, a.btn.btn-primary:active{
+    background-color: #a5a5a5;
+    border-color: #ffffff;
+}

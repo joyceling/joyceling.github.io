@@ -27,24 +27,15 @@ div.row {
 .project-card {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 10px;
     display: flex;
     justify-content: space-between;
 }
 
-a.btn.btn-primary {
-    color: #fff;
-    background-color: #a5a5a5;
-    border-color: #ffffff;
-    margin: 10px auto;
-    display: block;
-    font-family: 'Open Sans Condensed', sans-serif;
+.project-card:hover:not(.featured-project) {
+    box-shadow: 16px 8px 30px 4px #d8d1d1;
 }
 
-a.btn.btn-primary:hover, a.btn.btn-primary:active{
-    background-color: #e47a72;
-    border-color: #ffffff;
-}
 
 img.card-img-top {
     margin: 14px 0;
@@ -68,6 +59,13 @@ nav.navbar.navbar-light.bg-faded.bot {
 
 .featured-project img {
     height: inherit;
+}
+
+div.row.featured {
+    background-color: #9998989c;
+    padding: 30px 0;
+    border-radius: 20px;
+    margin-top: 20px 0;
 }
 
 
