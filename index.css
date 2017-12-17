@@ -105,7 +105,7 @@ div.main {
     border-radius: 15px;
     background-color: white;
     width: 30%;
-    height: 290px;
+    height: 320px;
     margin: 40px 15px 5px 15px;
     text-align: center;
     font-style: italic;
@@ -236,7 +236,7 @@ nav.navbar.bot {
 @media only screen and (max-width: 410px) {
     div.col.links {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     div.main {

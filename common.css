@@ -108,29 +108,9 @@ div.col.logo {
 }
 
 p#love {
-    font-size: 19px;
+    font-size: 12px;
 }
 
-
-
-@media only screen and (max-width: 800px) {
-    nav.navbar.navbar-light.bg-faded.bot {
-        height: 239px;
-    }
-
-    nav div.row {
-        height: 80px;
-    }
-
-    nav div.container {
-        height:100px;
-    }
-
-    div.made-with-love {
-        padding-top: 20px;
-    }
-
-}
 
 /*--------------------------------
 
@@ -150,4 +130,24 @@ a.btn.btn-primary {
 a.btn.btn-primary:hover, a.btn.btn-primary:active{
     background-color: #a5a5a5;
     border-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 800px) {
+    nav.navbar.navbar-light.bg-faded.bot {
+        height: 239px;
+    }
+
+    nav div.row {
+        height: 80px;
+    }
+
+    nav div.container {
+        height:100px;
+    }
+
+    div.made-with-love {
+        padding-top: 20px;
+    }
+
 }
