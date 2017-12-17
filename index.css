@@ -144,7 +144,7 @@ div#inner-innovate-div {
 }
 
 nav.navbar.bot {
-    bottom: -490px;
+    /*bottom: -490px;*/
 }
 
 
@@ -172,7 +172,20 @@ nav.navbar.bot {
 
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (max-width: 935px) {
+    div#the-three-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.main {
+        width: 63%;
+    }
+
+}
+
+@media only screen and (min-width: 935px) {
     div#landing-block {
         display:flex;
         width: 80%;
@@ -203,6 +216,19 @@ nav.navbar.bot {
     div#subtitle-holder h1 {
         font-size: 50px;
     }
+
+}
+
+@media only screen and (max-width: 370px) {
+    div.col.links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div.main {
+        width: 63%;
+    }
+
 
 }
 

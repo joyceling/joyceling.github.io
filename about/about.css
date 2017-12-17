@@ -14,5 +14,10 @@ div#about-content {
     border-radius: 20px;
 }
 
-
+@media only screen and (max-width: 370px) {
+    div.col.links {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 

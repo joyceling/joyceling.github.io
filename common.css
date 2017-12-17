@@ -47,7 +47,6 @@ nav.navbar.bot {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
     /*display:none;*/
 }
 
@@ -55,6 +54,7 @@ nav.navbar.bot {
 nav.navbar ul {
     list-style-type: none;
     font-size: 19px;
+    padding-left: 0;
 }
 
 .links ul li a {
@@ -113,9 +113,22 @@ p#love {
 
 
 
-@media only screen and (max-width: 768px) {
-    .navbar.bot {
-        display:none;
+@media only screen and (max-width: 800px) {
+    nav.navbar.navbar-light.bg-faded.bot {
+        height: 239px;
     }
+
+    nav div.row {
+        height: 80px;
+    }
+
+    nav div.container {
+        height:100px;
+    }
+
+    div.made-with-love {
+        padding-top: 20px;
+    }
+
 }
 
