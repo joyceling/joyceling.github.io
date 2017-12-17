@@ -53,7 +53,7 @@ div#my-photo-subtitle {
     font-family: 'Open Sans Condensed', sans-serif;
     background: rgb(150, 146, 146);
     padding: 5px 0;
-    border-top: 1px dashed black;
+    border-top: 1px dashed #00000059;
 }
 
 div#my-photo-subtitle p {
@@ -105,7 +105,7 @@ div.main {
     border-radius: 15px;
     background-color: white;
     width: 30%;
-    height: 405px;
+    height: 343px;
     margin: 40px 15px 5px 15px;
     text-align: center;
     font-style: italic;
@@ -129,19 +129,32 @@ div.main p {
 }
 
 div#inner-design-div {
-    padding: 15px;
+    padding: 25px;
     display: none;
 }
 
 div#inner-create-div {
-    padding: 15px;
+    padding: 25px;
     display: none;
 }
 
 div#inner-innovate-div {
-    padding: 15px;
+    padding: 25px;
     display: none;
 }
+
+img.icon {
+    width:80%;
+}
+
+/*--------------------------------
+
+       ICONS
+
+--------------------------------*/
+
+
+
 
 nav.navbar.bot {
     /*bottom: -490px;*/
